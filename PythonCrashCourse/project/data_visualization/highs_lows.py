@@ -4,7 +4,8 @@ from datetime import datetime
 from matplotlib import pyplot as plt
 
 # Get high temperatures from file.
-filename = 'input/death_valley_2014.csv'
+#filename = 'input/death_valley_2014.csv'
+filename = 'input/Bangkok-May2016.csv'
 with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)

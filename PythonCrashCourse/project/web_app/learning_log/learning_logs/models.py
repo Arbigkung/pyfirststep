@@ -1,5 +1,3 @@
-from __future__ import unicode_literals
-
 from django.db import models
 
 # Create your models here.
@@ -16,6 +14,7 @@ class Entry(models.Model):
     """Someting specific learned about a topic"""
     topic = models.ForeignKey(Topic)
     text = models.DateTimeField(auto_now_add=True)
+    date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         verbose_name_plural = 'entries'
